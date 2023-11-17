@@ -37,9 +37,9 @@ const User = () => {
   };
   return (
     <div className="flex h-screen w-full items-center justify-center bg-cl-bgSecondary bg-cover bg-no-repeat " style={{height: "100vh"}}>
-      <div className=" flex items-center justify-center md:rounded-xl bg- px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8 bg-cl-bgPrimary h-full md:h-auto w-full md:w-auto">
-        <div className="text-cl-textPrimary mx-12">
-          <div className="mb-8 flex flex-col items-center">
+      <div className=" flex items-center justify-center md:rounded-xl bg- px-32 py-10 shadow-lg backdrop-blur-md max-sm:px-8 bg-cl-bgPrimary h-full md:h-auto w-full md:w-auto">
+        <div className="text-cl-textPrimary">
+          <div className="mb-8 flex flex-col items-center sm:w-96">
             <img src={logo} width="120" alt="" srcSet="" />
             <h1 className="mb-2 text-3xl font-bold">Craftlooms</h1>
             <span className="text-cl-50">Enter Login Details</span>
@@ -48,7 +48,7 @@ const User = () => {
             <div className="m-4 text-lg">
               <input
                 onChange={(e) => setEmail(e.target.value)}
-                className="focus:outline-none focus:ring focus:ring-cl-outline focus:cl-bgSecondary rounded-3xl border-none py-2 text-center text-cl-text2 placeholder-cl-text2 shadow-lg outline-none "
+                className="w-full focus:outline-none focus:ring focus:ring-cl-outline focus:cl-bgSecondary rounded-3xl border-none py-2 text-center text-cl-text2 placeholder-cl-text2 shadow-lg outline-none "
                 type="email"
                 name="name"
                 placeholder="id@email.com"
@@ -57,7 +57,7 @@ const User = () => {
             </div>
 
             <div className="relative mb-2 mx-4 text-lg flex items-center focus:outline-none focus:ring focus:ring-cl-outline focus:cl-bgSecondary bg-white rounded-3xl border-none shadow-lg outline-none backdrop-blur-md">
-              <div>
+              <div className="w-full">
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 type={showpassword ? "password" : "text"}
